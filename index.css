@@ -9,16 +9,18 @@ header {
   flex-direction: column;
   background-color: #1F2937;
   color: white;
-  padding: 15px;
+  padding: 10px 50px 10px 50px;
   font-family: 'monospace';
+  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 header .top {
   display: flex;
   justify-content: space-between;
-  margin-top: 1%;
-  margin-bottom: 5%;
   align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .logo {
@@ -44,14 +46,15 @@ li {
 
 .header-content {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 40px;
 }
 
 .header-content-left {
   display: flex;
   flex-direction: column;
-  flex: 1 1 0;
+  flex: 3 1 0;
   margin: 2%;
 }
 
@@ -75,7 +78,7 @@ li {
 .header-content-image {
   display: flex;
   flex: 1 0 auto;
-  justify-content: flex-end;
+  justify-content: center;
   align-self: center;
 }
 
