@@ -70,9 +70,16 @@ li {
   margin-top: 2%;
 }
 
-.header-content-button {
+button {
+  background-color: #0384fc;
   margin-top: 5%;
   margin-bottom: 5%;
+  padding: 2% 10% 2% 10%;
+  font-size: 20px;
+  border-radius: 10%;
+  border-style: none;
+  color: white;
+  font-weight: bolder;
 }
 
 .header-content-image {
