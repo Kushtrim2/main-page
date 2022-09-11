@@ -2,6 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  font-family: monospace;
 }
 
 header {
@@ -10,7 +11,6 @@ header {
   background-image: linear-gradient(to top, #000000, #120d10, #1b161d, #1f1f2a, #1f2937);
   color: white;
   padding: 10px 50px 10px 50px;
-  font-family: 'monospace';
 }
 
 header .top {
@@ -46,8 +46,6 @@ li {
 .header-content {
   display: flex;
   flex-wrap: wrap;
-  /*! justify-content: space-between; */
-  /*! padding-bottom: 40px; */
 }
 
 .header-content-left {
@@ -93,9 +91,8 @@ button:hover {
 
 .header-content-image {
   display: flex;
-  flex: 1 0 auto;
   justify-content: center;
-  align-self: center;
+  overflow: hidden;
 }
 
 .foto {
@@ -115,7 +112,6 @@ main {
   justify-content: center;
   background-repeat: no-repeat;
   color: white;
-  font-family: fantasy;
   height: 48vw;
   padding: 50px 0px 97px 0px;
 }
@@ -145,35 +141,39 @@ main {
 
 main .text {
   display: flex;
-  width: 160px;
+  width: 12vw;
   flex: 1;
   align-self: center;
   justify-content: center;
   font-weight: bold;
   background-color: #c93535;
-  border-radius: 7%;
+  border-radius: 4%;
   background-image: linear-gradient(to left top, #c42525, #941a2a, #631725, #34121a, #000000);
 }
 
 main img {
   align-self: center;
-  width: 150px;
-  height: 150px;
+  width: 10vw;
+  height: 10vw;
   border-style: double;
   border-width: 7px;
   border-color: #c93535;
   border-radius: 75px;
 }
 
-.quote {
+#quote {
   display: flex;
   flex-direction: column;
-  background-color: slategray;
   margin: 0;
   font-size: 36px;
   background-color: black;
   color: white;
   padding: 0% 15% 0% 15%;
+  font-family: sans-serif;
+}
+
+#actual-quote {
+  font-family: fantasy;
 }
 
 .author {
@@ -196,7 +196,6 @@ main img {
   flex-direction: row;
   background-image: url(trailer2.jpg);
   background-size: cover;
-  font-family: fantasy;
   color: white;
   margin: 1%;
   padding: 4%;
@@ -215,7 +214,7 @@ mark {
   background-image: linear-gradient(to right top, #c93535, #af2c2d, #972325, #7e1a1d, #671215, #611114, #5a0f12, #540e10, #5c1315, #631819, #6b1c1d, #732121);
 }
 
-.pop-up button {
+.button-pop {
   border-style: solid;
   border-color: white;
   font-weight: bolder;
