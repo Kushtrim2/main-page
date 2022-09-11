@@ -113,7 +113,7 @@ main {
   background-repeat: no-repeat;
   color: white;
   height: 48vw;
-  padding: 50px 0px 97px 0px;
+  padding: 90px 0px 97px 0px;
 }
 
 .container {
@@ -136,7 +136,7 @@ main {
   max-width: 197px;
   flex: 1;
   gap: 17px;
-  margin: 2px;
+  margin: 30px;
 }
 
 main .text {
