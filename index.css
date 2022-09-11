@@ -7,7 +7,7 @@ body {
 header {
   display: flex;
   flex-direction: column;
-  background-color: #1F2937;
+  background-image: linear-gradient(to top, #000000, #120d10, #1b161d, #1f1f2a, #1f2937);
   color: white;
   padding: 10px 50px 10px 50px;
   font-family: 'monospace';
@@ -22,8 +22,9 @@ header .top {
 }
 
 .logo {
-  font-size: 24px;
-  color: #F9FAF8;
+  display: flex;
+  width: 50px;
+  height: 50px;
 }
 
 ul {
@@ -60,6 +61,7 @@ li {
   font-size: 48px;
   font-weight: 1000;
   color: #F9FAF8;
+  text-transform: uppercase;
 }
 
 .header-content-text {
@@ -69,7 +71,7 @@ li {
 }
 
 button {
-  background-color: #0384fc;
+  background-color: #c93535;
   margin-top: 5%;
   margin-bottom: 5%;
   padding: 2% 10% 2% 10%;
@@ -78,6 +80,15 @@ button {
   border-style: none;
   color: white;
   font-weight: bolder;
+}
+
+button:hover {
+  border-style: solid;
+  border-color: #c93535;
+  font-weight: bolder;
+  background-color: white;
+  color: #c93535;
+  cursor: pointer;
 }
 
 .header-content-image {
@@ -97,10 +108,16 @@ button {
 
 main {
   display: flex;
+  background-image: url(trailer.jpg);
+  background-size: cover;
   flex-direction: column;
   background-color: white;
   justify-content: center;
-  flex: 1 1 0;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: fantasy;
+  height: 48vw;
+  padding: 50px 0px 97px 0px;
 }
 
 .container {
@@ -128,19 +145,24 @@ main {
 
 main .text {
   display: flex;
-  width: 100px;
+  width: 160px;
   flex: 1;
   align-self: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: #c93535;
+  border-radius: 7%;
+  background-image: linear-gradient(to left top, #c42525, #941a2a, #631725, #34121a, #000000);
 }
 
 main img {
   align-self: center;
   width: 150px;
   height: 150px;
-  border-style: solid;
-  border-width: 5px;
-  border-color: #3882F6;
-  border-radius: 10px;
+  border-style: double;
+  border-width: 7px;
+  border-color: #c93535;
+  border-radius: 75px;
 }
 
 .quote {
@@ -148,8 +170,10 @@ main img {
   flex-direction: column;
   background-color: slategray;
   margin: 0;
-  padding: 10%;
   font-size: 36px;
+  background-color: black;
+  color: white;
+  padding: 0% 15% 0% 15%;
 }
 
 .author {
@@ -162,24 +186,49 @@ main img {
 .call-to-action {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  background-color: #3882f6;
-  color: white;
-  margin: 5%;
-  padding: 5%;
-  border-radius: 4%;
-  gap: 5%;
+  justify-content: center;
+  background-color: black;
+  padding: 50px;
 }
 
-.call-to-action .text {
+.pop-up {
+  display: flex;
+  flex-direction: row;
+  background-image: url(trailer2.jpg);
+  background-size: cover;
+  font-family: fantasy;
+  color: white;
+  margin: 1%;
+  padding: 4%;
+  border-radius: 5%;
+  gap: 25%;
+}
+
+.pop-up .text {
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
-.call-to-action button {
+mark {
+  color: white;
+  background-image: linear-gradient(to right top, #c93535, #af2c2d, #972325, #7e1a1d, #671215, #611114, #5a0f12, #540e10, #5c1315, #631819, #6b1c1d, #732121);
+}
+
+.pop-up button {
   border-style: solid;
   border-color: white;
   font-weight: bolder;
+  background-image: linear-gradient(to right top, #c93535, #af2c2d, #972325, #7e1a1d, #671215, #611114, #5a0f12, #540e10, #5c1315, #631819, #6b1c1d, #732121);
+}
+
+.pop-up button:hover {
+  border-style: solid;
+  border-color: #c93535;
+  font-weight: bolder;
+  background-image: linear-gradient(to right top, #ffffff, #f2f0f3, #e7e0e6, #ded0d7, #d5c0c6, #ceb3b8, #c7a6a9, #bf9999, #b78b8a, #b07c7c, #a76e6e, #9f6060);
+  color: #c93535;
+  cursor: pointer;
 }
 
 .text-title {
